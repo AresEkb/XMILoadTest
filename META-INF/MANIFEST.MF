@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: XMILoadTest
+Bundle-SymbolicName: XMILoadTest
+Bundle-Version: 1.0.0.qualifier
+Export-Package: xmiLoadTest
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.uml2.uml
+Import-Package: org.eclipse.uml2.uml.util
