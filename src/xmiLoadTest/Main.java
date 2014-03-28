@@ -13,6 +13,7 @@ import org.eclipse.uml2.uml.Stereotype;
 import org.eclipse.uml2.uml.UMLPackage;
 import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.uml2.uml.resource.XMI2UMLResource;
+import org.eclipse.uml2.uml.resources.util.UMLResourcesUtil;
 
 public class Main {
 
@@ -20,13 +21,14 @@ public class Main {
         final String input = "model/Test.xmi";
 
         ResourceSet rs = new ResourceSetImpl();
+        UMLResourcesUtil.init(rs);
         rs.setURIConverter(new CustomURIConverter());
         rs.getPackageRegistry().put(
                 "http://www.eclipse.org/uml2/2.1.0/UML", UMLPackage.eINSTANCE);
-        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(
-                UMLResource.FILE_EXTENSION, UMLResource.Factory.INSTANCE);
-        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(
-                XMI2UMLResource.FILE_EXTENSION, XMI2UMLResource.Factory.INSTANCE);
+//        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(
+//                UMLResource.FILE_EXTENSION, UMLResource.Factory.INSTANCE);
+//        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(
+//                XMI2UMLResource.FILE_EXTENSION, XMI2UMLResource.Factory.INSTANCE);
 
         Resource resource = rs.getResource(createFileURI(input), true);
         System.out.println("Root: " + resource.getContents().get(0).getClass());
