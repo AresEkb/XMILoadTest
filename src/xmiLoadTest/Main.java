@@ -1,9 +1,11 @@
 package xmiLoadTest;
 
 import java.io.File;
+import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.Resource.Factory.Registry;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
@@ -29,6 +31,12 @@ public class Main {
 //                UMLResource.FILE_EXTENSION, UMLResource.Factory.INSTANCE);
 //        rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(
 //                XMI2UMLResource.FILE_EXTENSION, XMI2UMLResource.Factory.INSTANCE);
+        System.out.println("--- Global Resource Factory Registry:");
+        printResourceFactoryRegistry(Registry.INSTANCE);
+        System.out.println("--- Local Resource Factory Registry:");
+        printResourceFactoryRegistry(rs.getResourceFactoryRegistry());
+        System.out.println("--- PackageRegistry:");
+        printMap(rs.getPackageRegistry());
 
         Resource resource = rs.getResource(createFileURI(input), true);
         System.out.println("Root: " + resource.getContents().get(0).getClass());
@@ -46,8 +54,26 @@ public class Main {
         }
     }
 
+    private static void printResourceFactoryRegistry(Registry registry)
+    {
+        System.out.println("ExtensionToFactoryMap:");
+        printMap(registry.getExtensionToFactoryMap());
+        System.out.println("\nContentTypeToFactoryMap:");
+        printMap(registry.getContentTypeToFactoryMap());
+        System.out.println("\nProtocolToFactoryMap:");
+        printMap(registry.getProtocolToFactoryMap());
+        System.out.println();
+    }
+
     private static URI createFileURI(String relativePath)
     {
         return URI.createFileURI(new File(relativePath).getAbsolutePath());
+    }
+    
+    private static void printMap(Map<String, Object> map)
+    {
+        for (String key : map.keySet()) {
+            System.out.println(key + " : " + map.get(key));
+        }
     }
 }
