@@ -1,120 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProfileBase="http:///schemas/ProfileBase/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/ProfileBase/1 ProfileBase.profile.uml#_IfFYQMmBEdqBcN1R6EvWUw">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ProfileBase="http:///schemas/ProfileBase/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/ProfileBase/1 ProfileBase.profile.uml#_IfFYQMmBEdqBcN1R6EvWUw">
   <uml:Profile xmi:id="_vjbuwOvHEdiDX5bji0iVSA" name="Deployment" metamodelReference="_wW0TgOvHEdiDX5bji0iVSA">
     <eAnnotations xmi:id="_yFOWEuvHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_4OVBUD0TEeKt-L0gyEptgQ" name="Deployment" nsURI="http:///schemas/Deployment/_4OQv4D0TEeKt-L0gyEptgQ/2" nsPrefix="Deployment">
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVBUT0TEeKt-L0gyEptgQ" name="Cloud">
+          <eAnnotations xmi:id="_4OVBUj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wXlIgOvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVBUz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVBVT0TEeKt-L0gyEptgQ" name="CommunicationLink">
+          <eAnnotations xmi:id="_4OVBVj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wZZtcevHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVBVz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVBWT0TEeKt-L0gyEptgQ" name="Desktop">
+          <eAnnotations xmi:id="_4OVBWj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wZ4OkevHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVBWz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVBXT0TEeKt-L0gyEptgQ" name="Ethernet">
+          <eAnnotations xmi:id="_4OVBXj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wai88OvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVBXz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVBYT0TEeKt-L0gyEptgQ" name="Fax">
+          <eAnnotations xmi:id="_4OVBYj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wbZ4kuvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVBYz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVBZT0TEeKt-L0gyEptgQ" name="FDDI">
+          <eAnnotations xmi:id="_4OVBZj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wb-gUuvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVBZz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVBaT0TEeKt-L0gyEptgQ" name="Hub">
+          <eAnnotations xmi:id="_4OVBaj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wc1b8OvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVBaz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVoYT0TEeKt-L0gyEptgQ" name="Laptop">
+          <eAnnotations xmi:id="_4OVoYj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wdaDsOvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVoYz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVoZT0TEeKt-L0gyEptgQ" name="Mainframe">
+          <eAnnotations xmi:id="_4OVoZj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_weEyEOvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVoZz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVoaT0TEeKt-L0gyEptgQ" name="Minicomputer">
+          <eAnnotations xmi:id="_4OVoaj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wepZ0evHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVoaz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVobT0TEeKt-L0gyEptgQ" name="Modem">
+          <eAnnotations xmi:id="_4OVobj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wfH68OvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVobz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVocT0TEeKt-L0gyEptgQ" name="Plotter">
+          <eAnnotations xmi:id="_4OVocj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wfaO0uvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVocz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVodT0TEeKt-L0gyEptgQ" name="Printer">
+          <eAnnotations xmi:id="_4OVodj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wf5XAOvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVodz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVoeT0TEeKt-L0gyEptgQ" name="RadioTower">
+          <eAnnotations xmi:id="_4OVoej0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wgLq4uvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVoez0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVofT0TEeKt-L0gyEptgQ" name="Router">
+          <eAnnotations xmi:id="_4OVofj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wg2ZQevHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVofz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVogT0TEeKt-L0gyEptgQ" name="Satellite">
+          <eAnnotations xmi:id="_4OVogj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_whU6YOvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVogz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVohT0TEeKt-L0gyEptgQ" name="SatelliteDish">
+          <eAnnotations xmi:id="_4OVohj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_whtU4OvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVohz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVoiT0TEeKt-L0gyEptgQ" name="Scanner">
+          <eAnnotations xmi:id="_4OVoij0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wiFvYuvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVoiz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVojT0TEeKt-L0gyEptgQ" name="Tower">
+          <eAnnotations xmi:id="_4OVojj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wikQgOvHEdiDX5bji0iVSA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVojz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4OVokT0TEeKt-L0gyEptgQ" name="Minicomputer">
+          <eAnnotations xmi:id="_4OVokj0TEeKt-L0gyEptgQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_o42FED0TEeKt-L0gyEptgQ"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_4OVokz0TEeKt-L0gyEptgQ" name="base_Node" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
       <contents xmi:type="ecore:EPackage" xmi:id="_IrdAUMmBEdqBcN1R6EvWUw" name="Deployment" nsURI="http:///schemas/Deployment/1" nsPrefix="Deployment">
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAUcmBEdqBcN1R6EvWUw" name="Cloud">
           <eAnnotations xmi:id="_IrdAUsmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wXlIgOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAU8mBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAVMmBEdqBcN1R6EvWUw" name="CommunicationLink">
           <eAnnotations xmi:id="_IrdAVcmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wZZtcevHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAVsmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAWcmBEdqBcN1R6EvWUw" name="Desktop">
           <eAnnotations xmi:id="_IrdAWsmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wZ4OkevHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAW8mBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAXMmBEdqBcN1R6EvWUw" name="Ethernet">
           <eAnnotations xmi:id="_IrdAXcmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wai88OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAXsmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAX8mBEdqBcN1R6EvWUw" name="Fax">
           <eAnnotations xmi:id="_IrdAYMmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wbZ4kuvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAYcmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAYsmBEdqBcN1R6EvWUw" name="FDDI">
           <eAnnotations xmi:id="_IrdAY8mBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wb-gUuvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAZMmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAZcmBEdqBcN1R6EvWUw" name="Hub">
           <eAnnotations xmi:id="_IrdAZsmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wc1b8OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAZ8mBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAaMmBEdqBcN1R6EvWUw" name="Laptop">
           <eAnnotations xmi:id="_IrdAacmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wdaDsOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAasmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAa8mBEdqBcN1R6EvWUw" name="Mainframe">
           <eAnnotations xmi:id="_IrdAbMmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_weEyEOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAbcmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAbsmBEdqBcN1R6EvWUw" name="Minicomputer">
           <eAnnotations xmi:id="_IrdAb8mBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wepZ0evHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAcMmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAccmBEdqBcN1R6EvWUw" name="Modem">
           <eAnnotations xmi:id="_IrdAcsmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wfH68OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAc8mBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAdMmBEdqBcN1R6EvWUw" name="Plotter">
           <eAnnotations xmi:id="_IrdAdcmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wfaO0uvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAdsmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAd8mBEdqBcN1R6EvWUw" name="Printer">
           <eAnnotations xmi:id="_IrdAeMmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wf5XAOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAecmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAesmBEdqBcN1R6EvWUw" name="RadioTower">
           <eAnnotations xmi:id="_IrdAe8mBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wgLq4uvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAfMmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAfcmBEdqBcN1R6EvWUw" name="Router">
           <eAnnotations xmi:id="_IrdAfsmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wg2ZQevHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAf8mBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAgMmBEdqBcN1R6EvWUw" name="Satellite">
           <eAnnotations xmi:id="_IrdAgcmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_whU6YOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAgsmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAg8mBEdqBcN1R6EvWUw" name="SatelliteDish">
           <eAnnotations xmi:id="_IrdAhMmBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_whtU4OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAhcmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAhsmBEdqBcN1R6EvWUw" name="Scanner">
           <eAnnotations xmi:id="_IrdAh8mBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wiFvYuvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAiMmBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_IrdAicmBEdqBcN1R6EvWUw" name="Tower">
           <eAnnotations xmi:id="_IrdAismBEdqBcN1R6EvWUw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wikQgOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IrdAi8mBEdqBcN1R6EvWUw" name="base_Node" ordered="false" lowerBound="1">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
       </contents>
@@ -122,115 +244,115 @@
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yFy90evHEdiDX5bji0iVSA" name="Deployment__Ethernet">
           <eAnnotations xmi:id="_yFy90uvHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wai88OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LoMmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yFy90-vHEdiDX5bji0iVSA" name="Deployment__Plotter">
           <eAnnotations xmi:id="_yFy91OvHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wfaO0uvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LocmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yFy91evHEdiDX5bji0iVSA" name="Deployment__Cloud">
           <eAnnotations xmi:id="_yFy91uvHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wXlIgOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LosmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yFy91-vHEdiDX5bji0iVSA" name="Deployment__Mainframe">
           <eAnnotations xmi:id="_yFy92OvHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_weEyEOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9Lo8mBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yFy92evHEdiDX5bji0iVSA" name="Deployment__Router">
           <eAnnotations xmi:id="_yFy92uvHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wg2ZQevHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LpMmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yFy92-vHEdiDX5bji0iVSA" name="Deployment__FDDI">
           <eAnnotations xmi:id="_yFy93OvHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wb-gUuvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LpcmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EcOvHEdiDX5bji0iVSA" name="Deployment__Satellite">
           <eAnnotations xmi:id="_yF5EcevHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_whU6YOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LpsmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EcuvHEdiDX5bji0iVSA" name="Deployment__Printer">
           <eAnnotations xmi:id="_yF5Ec-vHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wf5XAOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9Lp8mBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EdOvHEdiDX5bji0iVSA" name="Deployment__RadioTower">
           <eAnnotations xmi:id="_yF5EdevHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wgLq4uvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LqMmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EeOvHEdiDX5bji0iVSA" name="Deployment__Scanner">
           <eAnnotations xmi:id="_yF5EeevHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wiFvYuvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LqcmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EeuvHEdiDX5bji0iVSA" name="Deployment__Tower">
           <eAnnotations xmi:id="_yF5Ee-vHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wikQgOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LqsmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EfOvHEdiDX5bji0iVSA" name="Deployment__Laptop">
           <eAnnotations xmi:id="_yF5EfevHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wdaDsOvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9Lq8mBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EfuvHEdiDX5bji0iVSA" name="Deployment__Desktop">
           <eAnnotations xmi:id="_yF5Ef-vHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wZ4OkevHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ii9LrMmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EgOvHEdiDX5bji0iVSA" name="Deployment__SatelliteDish">
           <eAnnotations xmi:id="_yF5EgevHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_whtU4OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IjG8oMmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EguvHEdiDX5bji0iVSA" name="Deployment__Fax">
           <eAnnotations xmi:id="_yF5Eg-vHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wbZ4kuvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IjG8ocmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EhOvHEdiDX5bji0iVSA" name="Deployment__Modem">
           <eAnnotations xmi:id="_yF5EhevHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wfH68OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IjG8osmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EhuvHEdiDX5bji0iVSA" name="Deployment__Minicomputer">
           <eAnnotations xmi:id="_yF5Eh-vHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wepZ0evHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IjG8o8mBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EiOvHEdiDX5bji0iVSA" name="Deployment__Hub">
           <eAnnotations xmi:id="_yF5EievHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wc1b8OvHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IjG8pMmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
         <eClassifiers xmi:type="ecore:EClass" xmi:id="_yF5EiuvHEdiDX5bji0iVSA" name="Deployment__CommunicationLink">
           <eAnnotations xmi:id="_yF5Ei-vHEdiDX5bji0iVSA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wZZtcevHEdiDX5bji0iVSA"/>
           <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IjG8pcmBEdqBcN1R6EvWUw" name="base_Node">
-            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Node"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Node"/>
           </eStructuralFeatures>
         </eClassifiers>
       </contents>
@@ -251,8 +373,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_vaOuUPyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x8M70PyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_vaOuUPyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4ObH8D0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4ObH8T0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x8M70PyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4ObH8j0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4ObH8z0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wZM5IOvHEdiDX5bji0iVSA" name="Node_Cloud" memberEnd="_wZM5IevHEdiDX5bji0iVSA _wZZtcOvHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yGLYVevHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -279,8 +409,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x8fPsfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x8lWUfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x8fPsfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4ObvAD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4ObvAT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x8lWUfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4ObvAj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4ObvAz0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wZsBUevHEdiDX5bji0iVSA" name="Node_CommunicationLink" memberEnd="_wZyH8OvHEdiDX5bji0iVSA _wZyH8uvHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yGXllevHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -307,8 +445,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x8rc8fyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x83qMfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x8rc8fyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4ObvBD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4ObvBT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x83qMfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4ObvBj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OcWED0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_waWvsOvHEdiDX5bji0iVSA" name="Node_Desktop" memberEnd="_waWvsevHEdiDX5bji0iVSA _wac2UevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yGjy0-vHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -335,8 +481,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x9D3cfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x9J-EfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x9D3cfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OcWET0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OcWEj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x9J-EfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OcWEz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OcWFD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wbTx8OvHEdiDX5bji0iVSA" name="Node_Ethernet" memberEnd="_wbTx8evHEdiDX5bji0iVSA _wbZ4kevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yGwAEOvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -363,8 +517,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x9QEsfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x9WLUfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x9QEsfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OcWFT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OcWFj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x9WLUfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4Oc9ID0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4Oc9IT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wb4ZsOvHEdiDX5bji0iVSA" name="Node_Fax" memberEnd="_wb4ZsevHEdiDX5bji0iVSA _wb-gUevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yG2Gs-vHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -391,8 +553,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x9c5AfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x9i_ofyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x9c5AfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4Oc9Ij0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4Oc9Iz0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x9i_ofyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4Oc9JD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4Oc9JT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wcpOsevHEdiDX5bji0iVSA" name="Node_FDDI" memberEnd="_wcpOsuvHEdiDX5bji0iVSA _wcvVUevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yHCT9OvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -419,8 +589,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x9pGQfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x9vM4fyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x9pGQfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4Oc9Jj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OdkMD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x9vM4fyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OdkMT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OdkMj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wdN2cuvHEdiDX5bji0iVSA" name="Node_Hub" memberEnd="_wdN2c-vHEdiDX5bji0iVSA _wdT9EevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yHOhMuvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -447,8 +625,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x91TgfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x-BgwfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x91TgfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OdkMz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OdkND0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x-BgwfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OdkNT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OdkNj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wd4k0OvHEdiDX5bji0iVSA" name="Node_Laptop" memberEnd="_wd4k0evHEdiDX5bji0iVSA _wd-rcevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yHUn1evHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -475,8 +661,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x-HnYfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x-T0ofyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x-HnYfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OeLQD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OeLQT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x-T0ofyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OeLQj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OeLQz0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wejTMOvHEdiDX5bji0iVSA" name="Node_Mainframe" memberEnd="_wejTMevHEdiDX5bji0iVSA _wepZ0OvHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yHg1EevHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -496,6 +690,7 @@
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_wepZ0evHEdiDX5bji0iVSA" name="Mini-computer">
       <eAnnotations xmi:id="_yHm7sOvHEdiDX5bji0iVSA" source="uml2.extensions">
         <details xmi:id="_yHm7sevHEdiDX5bji0iVSA" key="addedInVersion" value="0"/>
+        <details xmi:id="_tefagD0TEeKt-L0gyEptgQ" key="suppressed" value="true"/>
       </eAnnotations>
       <ownedAttribute xmi:id="_wfB0UevHEdiDX5bji0iVSA" name="base_Node" association="_we7tsevHEdiDX5bji0iVSA">
         <eAnnotations xmi:id="_yHm7suvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -503,8 +698,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x-Z7QfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x-gB4fyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x-Z7QfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OeLRD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OeLRT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x-gB4fyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OeLRj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OeyUD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_we7tsevHEdiDX5bji0iVSA" name="Node_Mini-computer" memberEnd="_we7tsuvHEdiDX5bji0iVSA _wfB0UevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yHm7tOvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -531,8 +734,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x-mIgfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x-mIg_yyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x-mIgfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OeyUT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OeyUj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x-mIg_yyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OeyUz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OeyVD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wfUIMOvHEdiDX5bji0iVSA" name="Node_Modem" memberEnd="_wfUIMevHEdiDX5bji0iVSA _wfaO0evHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yHzI8-vHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -559,8 +770,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x-sPIfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x-sPI_yyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x-sPIfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OeyVT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OeyVj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x-sPI_yyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OfZYD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OfZYT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wfypUOvHEdiDX5bji0iVSA" name="Node_Plotter" memberEnd="_wfypUevHEdiDX5bji0iVSA _wfypU-vHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yH_WMOvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -587,8 +806,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x-yVwfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x-4cYfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x-yVwfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OfZYj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OfZYz0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x-4cYfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OfZZD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OfZZT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wgFkQevHEdiDX5bji0iVSA" name="Node_Printer" memberEnd="_wgFkQuvHEdiDX5bji0iVSA _wgLq4evHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yIFc0-vHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -615,8 +842,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x--jAfyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x--jA_yyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x--jAfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OfZZj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OgAcD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x--jA_yyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OgAcT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OgAcj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wgqMAOvHEdiDX5bji0iVSA" name="Node_RadioTower" memberEnd="_wgqMAevHEdiDX5bji0iVSA _wg2ZQOvHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yILjduvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -643,8 +878,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x_EpofyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x_Epo_yyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x_EpofyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OgAcz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OgAdD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x_Epo_yyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OgAdT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OgAdj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_whItIOvHEdiDX5bji0iVSA" name="Node_Router" memberEnd="_whItIevHEdiDX5bji0iVSA _whOzwevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yIXwtevHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -671,8 +914,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x_KwQPyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x_KwQvyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x_KwQPyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OgngD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OgngT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x_KwQvyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4Ogngj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4Ogngz0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_whhHouvHEdiDX5bji0iVSA" name="Node_Satellite" memberEnd="_whhHo-vHEdiDX5bji0iVSA _whnOQevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yIj98evHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -699,8 +950,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x_Q24PyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x_Q24vyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x_Q24PyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OgnhD0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OgnhT0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x_Q24vyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4Ognhj0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OhOkD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wh5iIuvHEdiDX5bji0iVSA" name="Node_SatelliteDish" memberEnd="_wh_owOvHEdiDX5bji0iVSA _wiFvYevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yIqEluvHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -727,8 +986,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x_Q25PyyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x_W9gfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x_Q25PyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OhOkT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OhOkj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x_W9gfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OhOkz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OhOlD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wiYDQuvHEdiDX5bji0iVSA" name="Node_Scanner" memberEnd="_wiYDQ-vHEdiDX5bji0iVSA _wieJ4evHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yI2R0evHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -755,8 +1022,16 @@
         </eAnnotations>
         <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
       </ownedAttribute>
-      <icon xmi:id="_x_W9g_yyEdqtI675F5kkRw"/>
-      <icon xmi:id="_x_dEIfyyEdqtI675F5kkRw"/>
+      <icon xmi:id="_x_W9g_yyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OhOlT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OhOlj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_x_dEIfyyEdqtI675F5kkRw">
+        <eAnnotations xmi:id="_4OhOlz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4Oh1oD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_wiwdwOvHEdiDX5bji0iVSA" name="Node_Tower" memberEnd="_wiwdwevHEdiDX5bji0iVSA _wi2kYevHEdiDX5bji0iVSA">
       <eAnnotations xmi:id="_yJCfEevHEdiDX5bji0iVSA" source="uml2.extensions">
@@ -773,9 +1048,43 @@
         </lowerValue>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_o42FED0TEeKt-L0gyEptgQ" name="Minicomputer">
+      <eAnnotations xmi:id="_4Oh1oT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+        <details xmi:id="_4Oh1oj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_rRMcgD0TEeKt-L0gyEptgQ" name="base_Node" association="_rRKnUD0TEeKt-L0gyEptgQ">
+        <eAnnotations xmi:id="_4Oh1oz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OicsD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Node"/>
+      </ownedAttribute>
+      <icon xmi:id="_1--04D0TEeKt-L0gyEptgQ">
+        <eAnnotations xmi:id="_4OicsT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4Oicsj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+      <icon xmi:id="_3PLRcD0TEeKt-L0gyEptgQ">
+        <eAnnotations xmi:id="_4Oicsz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OictD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_rRKnUD0TEeKt-L0gyEptgQ" name="Node_Minicomputer" memberEnd="_rRL1cD0TEeKt-L0gyEptgQ _rRMcgD0TEeKt-L0gyEptgQ">
+      <eAnnotations xmi:id="_4OictT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+        <details xmi:id="_4OjDwD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_rRL1cD0TEeKt-L0gyEptgQ" name="extension_Minicomputer" type="_o42FED0TEeKt-L0gyEptgQ" aggregation="composite" association="_rRKnUD0TEeKt-L0gyEptgQ">
+        <eAnnotations xmi:id="_4OjDwT0TEeKt-L0gyEptgQ" source="uml2.extensions">
+          <details xmi:id="_4OjDwj0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:id="_vjleoPyyEdqtI675F5kkRw">
       <eAnnotations xmi:id="_vjrlQPyyEdqtI675F5kkRw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="ProfileBase.profile.uml#_IfFYQMmBEdqBcN1R6EvWUw"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_4OjDwz0TEeKt-L0gyEptgQ" source="uml2.extensions">
+        <details xmi:id="_4OjDxD0TEeKt-L0gyEptgQ" key="addedInVersion" value="2"/>
       </eAnnotations>
       <appliedProfile href="ProfileBase.profile.uml#_bFUAMdWLEdiy4IqP8whjFA"/>
     </profileApplication>
@@ -818,4 +1127,6 @@
   <ProfileBase:ExtendedImage xmi:id="_x_W9gPyyEdqtI675F5kkRw" data="3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D2269736F2D383835392D31223F3E0D0A3C212D2D2047656E657261746F723A2041646F626520496C6C7573747261746F722031302E302C20535647204578706F727420506C75672D496E202E205356472056657273696F6E3A20332E302E30204275696C642037372920202D2D3E0D0A3C21444F435459504520737667205055424C494320222D2F2F5733432F2F4454442053564720312E302F2F454E222020202022687474703A2F2F7777772E77332E6F72672F54522F323030312F5245432D5356472D32303031303930342F4454442F73766731302E64746422205B0D0A093C21454E54495459206E735F666C6F77732022687474703A2F2F6E732E61646F62652E636F6D2F466C6F77732F312E302F223E0D0A093C21454E54495459206E735F657874656E642022687474703A2F2F6E732E61646F62652E636F6D2F457874656E736962696C6974792F312E302F223E0D0A093C21454E54495459206E735F61692022687474703A2F2F6E732E61646F62652E636F6D2F41646F6265496C6C7573747261746F722F31302E302F223E0D0A093C21454E54495459206E735F6772617068732022687474703A2F2F6E732E61646F62652E636F6D2F4772617068732F312E302F223E0D0A093C21454E54495459206E735F766172732022687474703A2F2F6E732E61646F62652E636F6D2F5661726961626C65732F312E302F223E0D0A093C21454E54495459206E735F696D7265702022687474703A2F2F6E732E61646F62652E636F6D2F496D6167655265706C6163656D656E742F312E302F223E0D0A093C21454E54495459206E735F7366772022687474703A2F2F6E732E61646F62652E636F6D2F53617665466F725765622F312E302F223E0D0A093C21454E54495459206E735F637573746F6D2022687474703A2F2F6E732E61646F62652E636F6D2F47656E65726963437573746F6D4E616D6573706163652F312E302F223E0D0A093C21454E54495459206E735F61646F62655F78706174682022687474703A2F2F6E732E61646F62652E636F6D2F58506174682F312E302F223E0D0A093C21454E54495459206E735F7376672022687474703A2F2F7777772E77332E6F72672F323030302F737667223E0D0A093C21454E54495459206E735F786C696E6B2022687474703A2F2F7777772E77332E6F72672F313939392F786C696E6B223E0D0A5D3E0D0A3C737667200D0A0920786D6C6E733A783D22266E735F657874656E643B2220786D6C6E733A693D22266E735F61693B2220786D6C6E733A67726170683D22266E735F6772617068733B2220693A766965774F726967696E3D223237332E34393431203432332E333632382220693A72756C65724F726967696E3D223020302220693A70616765426F756E64733D223020373932203631322030220D0A0920786D6C6E733D22266E735F7376673B2220786D6C6E733A786C696E6B3D22266E735F786C696E6B3B2220786D6C6E733A613D22687474703A2F2F6E732E61646F62652E636F6D2F41646F6265535647566965776572457874656E73696F6E732F332E302F220D0A092077696474683D22363522206865696768743D2235352E323335222076696577426F783D223020302036352035352E32333522206F766572666C6F773D2276697369626C652220656E61626C652D6261636B67726F756E643D226E6577203020302036352035352E323335220D0A0920786D6C3A73706163653D227072657365727665223E0D0A093C6D657461646174613E0D0A09093C7661726961626C65536574732020786D6C6E733D22266E735F766172733B223E0D0A0909093C7661726961626C6553657420207661725365744E616D653D2262696E64696E673122206C6F636B65643D226E6F6E65223E0D0A090909093C7661726961626C65733E3C2F7661726961626C65733E0D0A090909093C763A73616D706C6544617461536574732020786D6C6E733D22266E735F637573746F6D3B2220786D6C6E733A763D22266E735F766172733B223E3C2F763A73616D706C6544617461536574733E0D0A0909093C2F7661726961626C655365743E0D0A09093C2F7661726961626C65536574733E0D0A09093C7366772020786D6C6E733D22266E735F7366773B223E0D0A0909093C736C696365733E3C2F736C696365733E0D0A0909093C736C696365536F75726365426F756E64732020783D223237332E3439342220793D223336382E313238222077696474683D22363522206865696768743D2235352E3233352220626F74746F6D4C6566744F726967696E3D2274727565223E3C2F736C696365536F75726365426F756E64733E0D0A09093C2F7366773E0D0A3C3F787061636B657420626567696E3D27EFBBBF272069643D2757354D304D7043656869487A7265537A4E54637A6B633964273F3E3C3F61646F62652D7861702D66696C74657273206573633D224352223F3E0D0A3C7264663A52444620786D6C6E733A7264663D27687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E73232720786D6C6E733A69583D27687474703A2F2F6E732E61646F62652E636F6D2F69582F312E302F273E0D0A0D0A203C7264663A4465736372697074696F6E2061626F75743D27270D0A2020786D6C6E733A7064663D27687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F273E0D0A20203C212D2D207064663A4372656174696F6E4461746520697320616C6961736564202D2D3E0D0A20203C212D2D207064663A4D6F644461746520697320616C6961736564202D2D3E0D0A20203C212D2D207064663A43726561746F7220697320616C6961736564202D2D3E0D0A203C2F7264663A4465736372697074696F6E3E0D0A0D0A203C7264663A4465736372697074696F6E2061626F75743D27270D0A2020786D6C6E733A7861703D27687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F273E0D0A20203C7861703A437265617465446174653E323030332D30372D33315431383A33393A32325A3C2F7861703A437265617465446174653E0D0A20203C7861703A4D6F64696679446174653E323030332D30372D33315431383A33393A32335A3C2F7861703A4D6F64696679446174653E0D0A20203C7861703A43726561746F72546F6F6C3E41646F626520496C6C7573747261746F722031302E303C2F7861703A43726561746F72546F6F6C3E0D0A203C2F7264663A4465736372697074696F6E3E0D0A0D0A3C2F7264663A5244463E0D0A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020203C3F787061636B657420656E643D2777273F3E0D0A0909093C2F6D657461646174613E0D0A09093C672069643D224C617965725F312220693A6C617965723D227965732220693A64696D6D656450657263656E743D2235302220693A7267625472696F3D2223344630303830303046464646223E0D0A0909093C673E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D36302E32352C35342E3733354835762D31302E356835352E32355635342E3733357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D36342E352C34372E393835682D3634762D31356836345634372E3938357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D36342E352C33312E37333563302D302E32352C302D302E37352D302E352D3143392E32352C302E3438352C392E32352C302E3438352C392E32352C302E3438350D0A0909090909632D302E32352D302E32352D302E37352C302D312C302E323563302C302E352C302C312C302E352C316335342E37352C33302E32352C35342E37352C33302E32352C35342E37352C33302E32354336332E37352C33322E3233352C36342E32352C33322E3233352C36342E352C33312E3733357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D22234646464646462220643D224D302E352C33342E32333568363448302E357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D226E6F6E6522207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E37352220643D224D302E352C33342E323335683634222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E37352220643D224D36342C33322E32333563302C302E32352D302E32352C302E352D302E352C302E350D0A0909090909632D302E352C302D302E37352D302E32352D302E37352D302E3563302D302E352C302E32352D302E37352C302E37352D302E37354336332E37352C33312E3438352C36342C33312E3733352C36342C33322E3233357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E352220643D224D35352E37352C34312E34383568372E35762D332E3235682D372E355634312E3438357A222F3E0D0A0909093C2F673E0D0A09093C2F673E0D0A093C2F7376673E0D0A" usageHint="ShapeImage" base_Image="_x_W9gfyyEdqtI675F5kkRw"/>
   <ProfileBase:ExtendedImage xmi:id="_x_W9gvyyEdqtI675F5kkRw" data="47494638396110001000E60000C4C8D0A2AAB6ACAAA08D96A4A3A8A0B9BDC7AAA9A0A7A9A0C9CDD4CACED59CA6A0B5BCC7979FAD99A3B2BEC3CBD8DBE1929AA89B9C97A0A7A0BDC3CEA6A59E9099A9646762666964A6AEBBA6A9AD62655C6F726CA2ABB9808891959FAF5C5F57626560B0B7C2B1B8C49299A0969FAE838B946A6D67828992BCBDBA9199A79DA5B2888F9754574E6D706A999FA66B6F69A7AFBB8F969EB5BCC8878F989AA2B18D949B7F868E8B929A6E7B8F575A518B887E70736D686B66868376DFF5FFF8FCFF6C706A99978EEDF9FFF3FAFFE6F7FFD7F3FF9F9C934C4F45A4AAB4A6A7A2797B74FFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F9040100004B002C00000000100010000007A6804B114A844A284B88898A4A3213132E498A924B4A1C0D0D311A859B4A914A220808233B46A5A646144A941E0101331B0A45B2B30AAA4A240C0C252D123EBEBF12B61503031D2F0444C9CA04B600CE19260742D3D407B60E0E34383C0643DEDF06B6180B0B3717023FE9EA02B6210F0F35163D41F4F53AB63009092B2048FEFFFE6CA92850E0448E23081322F4940202041B4A3E0099489105A241859268DCB8719247458100003B" usageHint="Icon" base_Image="_x_W9g_yyEdqtI675F5kkRw"/>
   <ProfileBase:ExtendedImage xmi:id="_x_dEIPyyEdqtI675F5kkRw" data="3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D2269736F2D383835392D31223F3E0D0A3C212D2D2047656E657261746F723A2041646F626520496C6C7573747261746F722031302E302C20535647204578706F727420506C75672D496E202E205356472056657273696F6E3A20332E302E30204275696C642037372920202D2D3E0D0A3C21444F435459504520737667205055424C494320222D2F2F5733432F2F4454442053564720312E302F2F454E222020202022687474703A2F2F7777772E77332E6F72672F54522F323030312F5245432D5356472D32303031303930342F4454442F73766731302E64746422205B0D0A093C21454E54495459206E735F666C6F77732022687474703A2F2F6E732E61646F62652E636F6D2F466C6F77732F312E302F223E0D0A093C21454E54495459206E735F657874656E642022687474703A2F2F6E732E61646F62652E636F6D2F457874656E736962696C6974792F312E302F223E0D0A093C21454E54495459206E735F61692022687474703A2F2F6E732E61646F62652E636F6D2F41646F6265496C6C7573747261746F722F31302E302F223E0D0A093C21454E54495459206E735F6772617068732022687474703A2F2F6E732E61646F62652E636F6D2F4772617068732F312E302F223E0D0A093C21454E54495459206E735F766172732022687474703A2F2F6E732E61646F62652E636F6D2F5661726961626C65732F312E302F223E0D0A093C21454E54495459206E735F696D7265702022687474703A2F2F6E732E61646F62652E636F6D2F496D6167655265706C6163656D656E742F312E302F223E0D0A093C21454E54495459206E735F7366772022687474703A2F2F6E732E61646F62652E636F6D2F53617665466F725765622F312E302F223E0D0A093C21454E54495459206E735F637573746F6D2022687474703A2F2F6E732E61646F62652E636F6D2F47656E65726963437573746F6D4E616D6573706163652F312E302F223E0D0A093C21454E54495459206E735F61646F62655F78706174682022687474703A2F2F6E732E61646F62652E636F6D2F58506174682F312E302F223E0D0A093C21454E54495459206E735F7376672022687474703A2F2F7777772E77332E6F72672F323030302F737667223E0D0A093C21454E54495459206E735F786C696E6B2022687474703A2F2F7777772E77332E6F72672F313939392F786C696E6B223E0D0A5D3E0D0A3C737667200D0A0920786D6C6E733A783D22266E735F657874656E643B2220786D6C6E733A693D22266E735F61693B2220786D6C6E733A67726170683D22266E735F6772617068733B2220693A766965774F726967696E3D223237312E33373231203432372E37352220693A72756C65724F726967696E3D223020302220693A70616765426F756E64733D223020373932203631322030220D0A0920786D6C6E733D22266E735F7376673B2220786D6C6E733A786C696E6B3D22266E735F786C696E6B3B2220786D6C6E733A613D22687474703A2F2F6E732E61646F62652E636F6D2F41646F6265535647566965776572457874656E73696F6E732F332E302F220D0A092077696474683D2236382E373522206865696768743D2236332E3235222076696577426F783D223020302036382E37352036332E323522206F766572666C6F773D2276697369626C652220656E61626C652D6261636B67726F756E643D226E6577203020302036382E37352036332E3235220D0A0920786D6C3A73706163653D227072657365727665223E0D0A093C6D657461646174613E0D0A09093C7661726961626C65536574732020786D6C6E733D22266E735F766172733B223E0D0A0909093C7661726961626C6553657420207661725365744E616D653D2262696E64696E673122206C6F636B65643D226E6F6E65223E0D0A090909093C7661726961626C65733E3C2F7661726961626C65733E0D0A090909093C763A73616D706C6544617461536574732020786D6C6E733D22266E735F637573746F6D3B2220786D6C6E733A763D22266E735F766172733B223E3C2F763A73616D706C6544617461536574733E0D0A0909093C2F7661726961626C655365743E0D0A09093C2F7661726961626C65536574733E0D0A09093C7366772020786D6C6E733D22266E735F7366773B223E0D0A0909093C736C696365733E3C2F736C696365733E0D0A0909093C736C696365536F75726365426F756E64732020783D223237312E3337322220793D223336342E35222077696474683D2236382E373522206865696768743D2236332E32352220626F74746F6D4C6566744F726967696E3D2274727565223E3C2F736C696365536F75726365426F756E64733E0D0A09093C2F7366773E0D0A3C3F787061636B657420626567696E3D27EFBBBF272069643D2757354D304D7043656869487A7265537A4E54637A6B633964273F3E3C3F61646F62652D7861702D66696C74657273206573633D224352223F3E0D0A3C7264663A52444620786D6C6E733A7264663D27687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E73232720786D6C6E733A69583D27687474703A2F2F6E732E61646F62652E636F6D2F69582F312E302F273E0D0A0D0A203C7264663A4465736372697074696F6E2061626F75743D27270D0A2020786D6C6E733A7064663D27687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F273E0D0A20203C212D2D207064663A4372656174696F6E4461746520697320616C6961736564202D2D3E0D0A20203C212D2D207064663A4D6F644461746520697320616C6961736564202D2D3E0D0A20203C212D2D207064663A43726561746F7220697320616C6961736564202D2D3E0D0A203C2F7264663A4465736372697074696F6E3E0D0A0D0A203C7264663A4465736372697074696F6E2061626F75743D27270D0A2020786D6C6E733A7861703D27687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F273E0D0A20203C7861703A437265617465446174653E323030332D30372D33315431383A33383A34365A3C2F7861703A437265617465446174653E0D0A20203C7861703A4D6F64696679446174653E323030332D30372D33315431383A33383A34375A3C2F7861703A4D6F64696679446174653E0D0A20203C7861703A43726561746F72546F6F6C3E41646F626520496C6C7573747261746F722031302E303C2F7861703A43726561746F72546F6F6C3E0D0A203C2F7264663A4465736372697074696F6E3E0D0A0D0A3C2F7264663A5244463E0D0A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020203C3F787061636B657420656E643D2777273F3E0D0A0909093C2F6D657461646174613E0D0A09093C672069643D224C617965725F312220693A6C617965723D227965732220693A64696D6D656450657263656E743D2235302220693A7267625472696F3D2223344630303830303046464646223E0D0A0909093C673E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D35352E352C35372E37354833352E37355635322E354835352E355635372E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D36342E32352C3632682D33362E35762D342E37356833362E355636327A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D36382E32352C353363302C302E352D302E352C312D312C31632D34322C302D34322C302D34322C30632D302E352C302D312D302E352D312D310D0A090909090963302D34322C302D34322C302D343263302D302E37352C302E352D312C312D316334322C302C34322C302C34322C3063302E352C302C312C302E32352C312C315635337A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E37352220643D224D36342E37352C34342E3563302C302E352D302E352C312D312C310D0A09090909094332392C34352E352C32392C34352E352C32392C34352E35632D302E37352C302D312D302E352D312D3163302D32392E32352C302D32392E32352C302D32392E323563302D302E352C302E32352D312C312D316333342E37352C302C33342E37352C302C33342E37352C3063302E352C302C312C302E352C312C310D0A09090909095634342E357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E37352220643D224D36332C353063302C312D302E37352C312E37352D312E37352C312E3735732D322D302E37352D322D312E37350D0A090909090973312D322C322D325336332C34392C36332C35307A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E352220643D224D35352E352C34392E37354833352E3735762D322E354835352E355634392E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D32322E37352C36322E373548302E3556302E356832322E32355636322E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D332E37352C32322E323556346C31352E352D302E32357631382E3548332E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D22234646464646462220643D224D332E37352C392E37354831392E3548332E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D226E6F6E6522207374726F6B653D22233030303030302220643D224D332E37352C392E37354831392E35222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D22234646464646462220643D224D332E352C31366831352E373548332E357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D226E6F6E6522207374726F6B653D22233030303030302220643D224D332E352C31366831352E3735222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D22234646464646462220643D224D362E37352C3768392E373548362E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D226E6F6E6522207374726F6B653D22233030303030302220643D224D362E37352C3768392E3735222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D22234646464646462220643D224D382C372E3735683748387A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D226E6F6E6522207374726F6B653D22233030303030302220643D224D382C372E37356837222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F66662220643D224D31372E37352C3648313756352E323568302E373556367A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E37352220643D224D31372E352C31332E3548352E3735762D324831372E355631332E357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D22234646464646462220643D224D31342E37352C31342E37354831374831342E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D226E6F6E6522207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E373522207374726F6B652D6C696E656361703D22726F756E642220643D224D31342E37352C31342E3735483137222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E37352220643D224D32312C3337682D352E35762D322E37354832315633377A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E37352220643D224D31372E32352C323048352E35762D322E32356831312E37355632307A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D22234646464646462220643D224D31342E37352C32314831374831342E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D226E6F6E6522207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E373522207374726F6B652D6C696E656361703D22726F756E642220643D224D31342E37352C3231483137222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D22233030303030302220643D224D31392E32352C32392E323548332E3735762D376831352E355632392E32357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E352220643D224D31392E352C35372E373563302C302E352D302E352C312D312C310D0A0909090909632D31332E352C302D31332E352C302D31332E352C30632D302E352C302D312D302E352D312D3143342C34312C342C34312C342C343163302D302E352C302E352D312C312D316331332E352C302C31332E352C302C31332E352C3063302E352C302C312C302E352C312C315635372E37357A222F3E0D0A090909093C7061746820693A6B6E6F636B6F75743D224F6666222066696C6C3D222346464646464622207374726F6B653D222330303030303022207374726F6B652D77696474683D22302E352220643D224D31352E37352C35362E373563302C302E352D302E352C302E37352D312C302E37350D0A0909090909632D352E352C302D352E352C302D352E352C30632D302E352C302D312D302E32352D312D302E373563302D302E352C302E352D302E37352C312D302E373563352E352C302C352E352C302C352E352C304331352E32352C35362C31352E37352C35362E32352C31352E37352C35362E37357A222F3E0D0A0909093C2F673E0D0A09093C2F673E0D0A093C2F7376673E0D0A" usageHint="ShapeImage" base_Image="_x_dEIfyyEdqtI675F5kkRw"/>
+  <ProfileBase:ExtendedImage xmi:id="_1-_b8D0TEeKt-L0gyEptgQ" data="47494638396110001000E600005E6E879EA6B3E9EAE8979FAE9BA4B4AFB6C19B9C97BCBDBA7A879CBABFC9A6A7A2A4ADBB7F868ED3D4D1939694AEB5C1A8B0BC70777A939AA1959CA36C7275757B7C878A897C889D5B5E58939CAAB8BBBDA1A6AAB3B9C490979E888F97838787A4ABB78FA9A4B3BAC689B4986A707390959C969B9F949795565952B1B8C59EA5B36C737698A0AE838A92A0A8B7A4A8AB7D8181797E80B6B9BB8993A450A0629BA3B073797C909BAC929AA8B2B9C5A1A9B7B0B7C39CA3B1ACB1BBBCC2CDC8CDD4969EABDDE0E6DADDE360645FC2C6CEAFB4BEACB3BF797B74FFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F90401000048002C00000000100010000007A18048064784858685064847418C8D8C1A278D478A42959695320E969347293E9FA00B13360000179C393FAAAB0F12310808379C10003DB6B62C1D112334219C0946C1C2461B1FC11C9C44CACBCA2F16CB9C3A043BD4D4041E2B00222E9C20033CE0E0032515332A019C45EAEBEA2630EB9C35C3C22D140505E88A3840FCFD400C240204C8C06988C1830631A0383849800224102322697000E2010112336A441208003B" usageHint="Icon" imageName="minicomputer.gif" base_Image="_1--04D0TEeKt-L0gyEptgQ"/>
+  <ProfileBase:ExtendedImage xmi:id="_3PL4gD0TEeKt-L0gyEptgQ" data="47494638396110001000E600005E6E879EA6B3E9EAE8979FAE9BA4B4AFB6C19B9C97BCBDBA7A879CBABFC9A6A7A2A4ADBB7F868ED3D4D1939694AEB5C1A8B0BC70777A939AA1959CA36C7275757B7C878A897C889D5B5E58939CAAB8BBBDA1A6AAB3B9C490979E888F97838787A4ABB78FA9A4B3BAC689B4986A707390959C969B9F949795565952B1B8C59EA5B36C737698A0AE838A92A0A8B7A4A8AB7D8181797E80B6B9BB8993A450A0629BA3B073797C909BAC929AA8B2B9C5A1A9B7B0B7C39CA3B1ACB1BBBCC2CDC8CDD4969EABDDE0E6DADDE360645FC2C6CEAFB4BEACB3BF797B74FFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021F90401000048002C00000000100010000007A18048064784858685064847418C8D8C1A278D478A42959695320E969347293E9FA00B13360000179C393FAAAB0F12310808379C10003DB6B62C1D112334219C0946C1C2461B1FC11C9C44CACBCA2F16CB9C3A043BD4D4041E2B00222E9C20033CE0E0032515332A019C45EAEBEA2630EB9C35C3C22D140505E88A3840FCFD400C240204C8C06988C1830631A0383849800224102322697000E2010112336A441208003B" usageHint="ShapeImage" imageName="minicomputer.gif" base_Image="_3PLRcD0TEeKt-L0gyEptgQ"/>
 </xmi:XMI>

@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_vFWtYLWLEeO_TMNNr8yIMQ" name="TestProfile" metamodelReference="_vFYikLWLEeO_TMNNr8yIMQ">
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_vFWtYLWLEeO_TMNNr8yIMQ" name="TestProfile" metamodelReference="_vFYikLWLEeO_TMNNr8yIMQ">
   <eAnnotations xmi:id="_vFepMLWLEeO_TMNNr8yIMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_0P-agcbWEeOcpNrdGHw7Yg" name="TestProfile" nsURI="http:///schemas/TestProfile/_0P-agMbWEeOcpNrdGHw7Yg/3" nsPrefix="TestProfile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_0P-agsbWEeOcpNrdGHw7Yg" name="ModelStereotype">
+        <eAnnotations xmi:id="_0P-ag8bWEeOcpNrdGHw7Yg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4LYdwLWLEeO_TMNNr8yIMQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0P-ahMbWEeOcpNrdGHw7Yg" name="attribute1" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0P-ahsbWEeOcpNrdGHw7Yg" name="base_Model" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Model"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_0P-aiMbWEeOcpNrdGHw7Yg" name="ClassStereotype">
+        <eAnnotations xmi:id="_0P-aicbWEeOcpNrdGHw7Yg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_59i-8LWLEeO_TMNNr8yIMQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_0P-aisbWEeOcpNrdGHw7Yg" name="attribute1" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_0P-ajMbWEeOcpNrdGHw7Yg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_0P-ajsbWEeOcpNrdGHw7Yg" name="Class1">
+        <eAnnotations xmi:id="_0P-aj8bWEeOcpNrdGHw7Yg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ztjdMMbGEeOcpNrdGHw7Yg"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_0P-akMbWEeOcpNrdGHw7Yg" name="Class2">
+        <eAnnotations xmi:id="_0P-akcbWEeOcpNrdGHw7Yg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ArQCsMbHEeOcpNrdGHw7Yg"/>
+      </eClassifiers>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_CHLYgLWMEeO_TMNNr8yIMQ" name="TestProfile" nsURI="http:///schemas/TestProfile/_CHKxcLWMEeO_TMNNr8yIMQ/2" nsPrefix="TestProfile">
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_CHLYgbWMEeO_TMNNr8yIMQ" name="ModelStereotype">
         <eAnnotations xmi:id="_CHLYgrWMEeO_TMNNr8yIMQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4LYdwLWLEeO_TMNNr8yIMQ"/>
@@ -8,7 +34,7 @@
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         </eStructuralFeatures>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CHLYhbWMEeO_TMNNr8yIMQ" name="base_Model" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Model"/>
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Model"/>
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_CHLYh7WMEeO_TMNNr8yIMQ" name="ClassStereotype">
@@ -17,7 +43,7 @@
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
         </eStructuralFeatures>
         <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CHLYi7WMEeO_TMNNr8yIMQ" name="base_Class" ordered="false" lowerBound="1">
-          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//Class"/>
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
         </eStructuralFeatures>
       </eClassifiers>
     </contents>
@@ -87,6 +113,16 @@
         <details xmi:id="_CHL_m7WMEeO_TMNNr8yIMQ" key="addedInVersion" value="2"/>
       </eAnnotations>
     </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ztjdMMbGEeOcpNrdGHw7Yg" name="Class1">
+    <eAnnotations xmi:id="_0P_BkMbWEeOcpNrdGHw7Yg" source="uml2.extensions">
+      <details xmi:id="_0P_ooMbWEeOcpNrdGHw7Yg" key="addedInVersion" value="3"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ArQCsMbHEeOcpNrdGHw7Yg" name="Class2">
+    <eAnnotations xmi:id="_0P_oocbWEeOcpNrdGHw7Yg" source="uml2.extensions">
+      <details xmi:id="_0P_oosbWEeOcpNrdGHw7Yg" key="addedInVersion" value="3"/>
+    </eAnnotations>
   </packagedElement>
   <profileApplication xmi:id="_vFa-0LWLEeO_TMNNr8yIMQ">
     <eAnnotations xmi:id="_vFa-0bWLEeO_TMNNr8yIMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
